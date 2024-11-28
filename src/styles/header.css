@@ -1,0 +1,17 @@
+.header__link {
+  font-family: "Nova Square", sans-serif;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.header__title {
+  margin-top: 0;
+  font-family: "Eater", serif;
+  color: white;
+  letter-spacing: 5px;
+  font-size: 5rem;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+}/*# sourceMappingURL=header.css.map */
