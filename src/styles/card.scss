@@ -1,0 +1,29 @@
+.card {
+  border: solid black 1px;
+  border-radius: 30px 30px 0px 0px;
+  background-color: white;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  &__name {
+    color: black;
+    text-align: center;
+    font-size: 32px;
+  }
+
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  &__audio {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+  }
+}

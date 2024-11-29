@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "nom": "Nom du musicien",
+    "photo": "photos/alexander-krivitskiy.jpg",
+    "audio": ""
+  },
+  {
+    "id": "2",
+    "nom": "Nom du musicien",
+    "photo": "photos/photoartiste.jpg",
+    "audio": ""
+  }
+]

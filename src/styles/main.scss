@@ -1,0 +1,15 @@
+.main {
+  &__title {
+    font-family: "Nova Square", sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__gallery {
+    display: flex;
+    justify-content: center;
+    gap:30px;
+  }
+}
