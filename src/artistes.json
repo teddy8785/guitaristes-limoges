@@ -2,25 +2,25 @@
   {
     "id": "1",
     "nom": "Coeur Rock",
-    "photo": "photos/sansnom.webP",
-    "audio": "audio/guitarRockPower.wav"
+    "photo": "photos/sansphoto.webP",
+    "audio": "audio/guitarRockPower.mp3"
   },
   {
     "id": "2",
     "nom": "pas de nom",
-    "photo": "photos/sansnom.webP",
+    "photo": "photos/sansphoto.webP",
     "audio": ""
   },
   {
     "id": "3",
     "nom": "pas de nom",
-    "photo": "photos/sansnom.webP",
+    "photo": "photos/sansphoto.webP",
     "audio": ""
   },
   {
     "id": "4",
     "nom": "pas de nom",
-    "photo": "photos/sansnom.webP",
+    "photo": "photos/sansphoto.webP",
     "audio": ""
   }
 ]
