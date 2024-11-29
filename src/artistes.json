@@ -1,14 +1,26 @@
 [
   {
     "id": "1",
-    "nom": "Nom du musicien",
-    "photo": "photos/alexander-krivitskiy.jpg",
-    "audio": ""
+    "nom": "Coeur Rock",
+    "photo": "photos/sansnom.webP",
+    "audio": "audio/guitarRockPower.wav"
   },
   {
     "id": "2",
-    "nom": "Nom du musicien",
-    "photo": "photos/photoartiste.jpg",
+    "nom": "pas de nom",
+    "photo": "photos/sansnom.webP",
+    "audio": ""
+  },
+  {
+    "id": "3",
+    "nom": "pas de nom",
+    "photo": "photos/sansnom.webP",
+    "audio": ""
+  },
+  {
+    "id": "4",
+    "nom": "pas de nom",
+    "photo": "photos/sansnom.webP",
     "audio": ""
   }
 ]

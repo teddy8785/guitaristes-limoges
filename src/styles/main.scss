@@ -1,4 +1,6 @@
 .main {
+  padding: 0px 50px;
+
   &__title {
     font-family: "Nova Square", sans-serif;
     font-size: 30px;
@@ -10,6 +12,7 @@
   &__gallery {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap:30px;
   }
 }
