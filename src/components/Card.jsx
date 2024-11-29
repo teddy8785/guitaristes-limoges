@@ -19,7 +19,7 @@ function Card({ id, nom, photo, audio }) {
         </picture>
         {audio && audio.length > 0 && (
           <audio controls className="card__audio">
-            <source src={audio} />
+            <source src={`${process.env.PUBLIC_URL}/${audio}`} />
           </audio>
         )}
       </NavLink>
