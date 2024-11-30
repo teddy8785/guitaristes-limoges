@@ -1,4 +1,4 @@
-import { NavLink, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Main from "../components/Main";
 import data from "../artistes.json";
@@ -14,9 +14,17 @@ function Presentation() {
     <div>
       <Header>
         <nav>
-          <NavLink className="main__link" style={{ margin: 0 }} to={`/Gallery`}>
+        <button
+            className="header__link"
+            style={{margin:0}}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.history.back();
+            }}
+          >
             Retour
-          </NavLink>
+          </button>
         </nav>
         <h1 className="header__title">{post.nom}</h1>
       </Header>

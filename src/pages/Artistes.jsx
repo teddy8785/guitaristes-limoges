@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import Main from "../components/Main";
-import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import Card from "../components/Card";
 import data from "../artistes.json";
@@ -14,9 +13,17 @@ function Artistes() {
     <div>
       <Header>
         <nav>
-          <NavLink className="main__link" style={{ margin: 0 }} to={`/Index`}>
+        <button
+            className="header__link"
+            style={{margin:0}}
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              window.history.back();
+            }}
+          >
             Retour
-          </NavLink>
+          </button>
         </nav>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
       </Header>

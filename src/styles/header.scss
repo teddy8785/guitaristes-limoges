@@ -10,6 +10,15 @@
     font-style: normal;
   }
 
+  &__link {
+    font-family: "Nova Square", sans-serif;
+    color:white;
+    background-color: black;
+    border: none;
+    font-size: 20px;
+    cursor:pointer;
+  }
+
   @media (max-width: 768px) {
     &__title {
       font-size: 3.5rem;
