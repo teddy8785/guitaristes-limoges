@@ -8,6 +8,18 @@
 .main__gallery {
   display: flex;
   justify-content: center;
+  align-content: stretch;
   flex-wrap: wrap;
   gap: 30px;
+}
+.main__link {
+  text-decoration: none;
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  margin: 12%;
+}
+@media (min-width: 768px) and (max-width: 1008px) {
+  .main__link {
+    margin: 7%;
+  }
 }/*# sourceMappingURL=main.css.map */

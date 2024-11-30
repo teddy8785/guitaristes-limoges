@@ -1,17 +1,15 @@
 import React from "react";
 import Card from "./Card";
 import data from "../artistes.json";
-import "../styles/main.css";
-import { NavLink } from "react-router-dom";
+import "../styles/gallery.css";
 
-function Main() {
-  const maxCards = 4;
+function Gallery() {
 
   return (
     <main className="main">
-      <h2 className="main__title">NOUVEAU</h2>
+      <h2 className="main__title">Tous les guitaristes</h2>
       <div className="main__gallery">
-        {data.slice(-maxCards).map((post) => (
+        {data.map((post) => (
           <Card
             key={post.id}
             id={post.id}
@@ -21,11 +19,8 @@ function Main() {
           />
         ))}
       </div>
-      <NavLink className="main__link" to={`/Gallery`}>
-        ...Voir tous les guitaristes
-      </NavLink>
     </main>
   );
 }
 
-export default Main;
+export default Gallery;

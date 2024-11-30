@@ -12,6 +12,11 @@
   }
 
   @media (max-width: 768px) {
+    & {
+display: flex;
+justify-content: space-between;
+    }
+
     &__title {
       font-size: 3.5rem;
     }

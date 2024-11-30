@@ -8,8 +8,9 @@ import {
 } from "react-router-dom";
 import "./styles/index.css";
 import Index from "./pages/Index";
-import Artiste from "./pages/Artiste.jsx";
+import Presentation from "./pages/Presentation.jsx";
 import Erreur from "./pages/Erreur.jsx";
+import Artistes from "./pages/Artistes.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -18,8 +19,9 @@ root.render(
       <Routes>
         <Route path="/" element={<Navigate to="/index" />} />
         <Route path="/index" element={<Index />} />
-        <Route path="/artiste" element={<Artiste />} />
-        <Route path="/artiste/:id" element={<Artiste />} />
+        <Route path="/gallery" element={<Artistes />} />
+        <Route path="/artiste" element={<Presentation />} />
+        <Route path="/artiste/:id" element={<Presentation />} />
         <Route path="*" element={<Erreur />} />
       </Routes>
     </Router>

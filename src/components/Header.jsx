@@ -1,9 +1,9 @@
 import "../styles/header.css";
 
-function Header() {
+function Header({children}) {
   return (
-    <header>
-      <h1 className="header__title">GUITARISTES LIMOGES</h1>
+    <header className="header">
+      {children}
     </header>
   );
 }

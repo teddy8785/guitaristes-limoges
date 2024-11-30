@@ -1,9 +1,9 @@
 [
   {
     "id": "1",
-    "nom": "Coeur Rock",
+    "nom": "pas de nom",
     "photo": "photos/sansphoto.webP",
-    "audio": "audio/guitarRockPower.mp3"
+    "audio": ""
   },
   {
     "id": "2",
@@ -19,6 +19,41 @@
   },
   {
     "id": "4",
+    "nom": "pas de nom",
+    "photo": "photos/sansphoto.webP",
+    "audio": ""
+  },
+  {
+    "id": "5",
+    "nom": "pas de nom",
+    "photo": "photos/sansphoto.webP",
+    "audio": ""
+  },
+  {
+    "id": "6",
+    "nom": "pas de nom",
+    "photo": "photos/sansphoto.webP",
+    "audio": ""
+  },
+  {
+    "id": "7",
+    "nom": "pas de nom",
+    "photo": "photos/sansphoto.webP",
+    "audio": ""
+  },{
+    "id": "8",
+    "nom": "Coeur Rock",
+    "photo": "photos/sansphoto.webP",
+    "audio": "audio/guitarRockPower.mp3"
+  },
+  {
+    "id": "9",
+    "nom": "pas de nom",
+    "photo": "photos/sansphoto.webP",
+    "audio": ""
+  },
+  {
+    "id": "10",
     "nom": "pas de nom",
     "photo": "photos/sansphoto.webP",
     "audio": ""
