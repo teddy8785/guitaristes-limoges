@@ -16,7 +16,6 @@ function Presentation() {
         <nav>
         <button
             className="header__link"
-            style={{margin:0}}
             href="#"
             onClick={(e) => {
               e.preventDefault();
