@@ -1,0 +1,56 @@
+.presentation {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.presentation h3 {
+  font-size: 30px;
+  text-align: center;
+  text-decoration: underline;
+  margin: 10px 0px 20px 0px;
+}
+.presentation__image {
+  border: solid black 1px;
+  border-radius: 30px;
+  background-color: white;
+  max-width: 300px;
+  max-height: 500px;
+}
+.presentation__contactcontent {
+  background-color: white;
+  height: 200px;
+  border-radius: 30px;
+  width: 300px;
+}
+.presentation__contact {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.presentation a {
+  font-family: "Nova Square", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+}
+.presentation__contact a {
+  color: black;
+  padding-top: 15px;
+}
+.presentation p {
+  color: black;
+  font-size: 25px;
+  text-align: center;
+}
+.presentation__histoire {
+  border: 1px solid black;
+  border-radius: 30px;
+  background-color: white;
+}
+@media (max-width: 768px) {
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+}/*# sourceMappingURL=presentation.css.map */

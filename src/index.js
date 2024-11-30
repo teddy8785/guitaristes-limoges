@@ -20,7 +20,6 @@ root.render(
         <Route path="/" element={<Navigate to="/index" />} />
         <Route path="/index" element={<Index />} />
         <Route path="/gallery" element={<Artistes />} />
-        <Route path="/artiste" element={<Presentation />} />
         <Route path="/artiste/:id" element={<Presentation />} />
         <Route path="*" element={<Erreur />} />
       </Routes>

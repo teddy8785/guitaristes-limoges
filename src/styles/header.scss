@@ -1,5 +1,4 @@
 .header {
-  
   &__title {
     margin-top: 0;
     font-family: "Eater", serif;
@@ -12,11 +11,6 @@
   }
 
   @media (max-width: 768px) {
-    & {
-display: flex;
-justify-content: space-between;
-    }
-
     &__title {
       font-size: 3.5rem;
     }
