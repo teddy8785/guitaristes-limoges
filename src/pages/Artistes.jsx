@@ -1,11 +1,10 @@
 import Header from "../components/Header";
 import Main from "../components/Main";
-import { useEffect } from "react";
 import Card from "../components/Card";
 import data from "../artistes.json";
 
 function Artistes() {
-  
+
   return (
     <div>
       <Header>
