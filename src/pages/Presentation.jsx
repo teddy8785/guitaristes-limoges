@@ -3,10 +3,15 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import data from "../artistes.json";
 import "../styles/presentation.css";
+import { useEffect } from "react";
 
 function Presentation() {
   const { id } = useParams();
   const post = data.find((artiste) => artiste.id === id);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>

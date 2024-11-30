@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import Main from "../components/Main";
-import React from "react";
 import Card from "../components/Card";
 import data from "../artistes.json";
 import { NavLink } from "react-router-dom";
@@ -11,7 +10,7 @@ function Index() {
   return (
     <div>
       <Header>
-      <NavLink className="main__link" to={`/Gallery`}>
+        <NavLink className="main__link" to={`/Gallery`}>
           ...Voir tous les guitaristes
         </NavLink>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>

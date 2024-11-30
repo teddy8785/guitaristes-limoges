@@ -13,6 +13,7 @@ import Erreur from "./pages/Erreur.jsx";
 import Artistes from "./pages/Artistes.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
     <Router>

@@ -5,10 +5,7 @@ import Card from "../components/Card";
 import data from "../artistes.json";
 
 function Artistes() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+  
   return (
     <div>
       <Header>
