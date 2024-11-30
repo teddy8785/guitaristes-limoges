@@ -11,6 +11,9 @@ function Index() {
   return (
     <div>
       <Header>
+      <NavLink className="main__link" to={`/Gallery`}>
+          ...Voir tous les guitaristes
+        </NavLink>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
       </Header>
       <Main>
@@ -26,9 +29,6 @@ function Index() {
             />
           ))}
         </div>
-        <NavLink className="main__link" to={`/Gallery`}>
-          ...Voir tous les guitaristes
-        </NavLink>
       </Main>
     </div>
   );

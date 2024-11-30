@@ -8,13 +8,11 @@ function Presentation() {
   const { id } = useParams();
   const post = data.find((artiste) => artiste.id === id);
 
-  console.log(post);
-
   return (
     <div>
       <Header>
         <nav>
-        <button
+          <button
             className="header__link"
             href="#"
             onClick={(e) => {
