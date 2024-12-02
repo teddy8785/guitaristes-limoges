@@ -1,20 +1,18 @@
+.main {
+  margin-top: 90px;
+}
 .main__title {
   font-family: "Nova Square", sans-serif;
   font-size: 25px;
   color: white;
   text-align: center;
-  margin: 50px 0px;
+  margin-bottom: 50px;
 }
 .main__gallery {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 50px;
-}
-.main__link {
-  text-decoration: none;
-  font-family: "Nova Square", sans-serif;
-  color: white;
 }
 @media (min-width: 768px) and (max-width: 1008px) {
   .main__link {
