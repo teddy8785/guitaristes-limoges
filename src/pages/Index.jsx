@@ -5,59 +5,74 @@ import Contact from "../components/Contact";
 import data from "../artistes.json";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Index() {
   const maxCards = 4;
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-    console.log('ok');
-    
-  }
+  };
 
   return (
     <div>
       <Header>
         <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
-        <NavLink className="header__link" to={`/Gallery`}>
-          ...Voir tous les guitaristes
-        </NavLink>
-        <nav className={`header__ancre--container ${isMenuOpen ? "" : "header__ancre--hidden"}`}>
+        <nav
+          className={`header__link--container ${
+            isMenuOpen ? "" : "header__link--hidden"
+          }`}
+        >
+          <NavLink
+            className="header__link"
+            to={`/Gallery`}
+            onClick={toggleMenu}
+          >
+            ...Voir tous les guitaristes
+          </NavLink>
+          <div className="header__ancre--container">
           <HashLink
             smooth
             to="#new"
-            className="header__ancre header__ancre--scroll"
+            className="header__ancre"
+            onClick={toggleMenu}
           >
             Nouveau
           </HashLink>
-          <HashLink smooth to="#contact" className="header__ancre">
+          <HashLink
+            smooth
+            to="#contact"
+            className="header__ancre"
+            onClick={toggleMenu}
+          >
             contact
           </HashLink>
+          </div>
         </nav>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
       </Header>
       <Main>
         <section id="new" className="main__">
-        <h2 className="main__title">
-          NOUVEAU
-        </h2>
-        <div className="main__gallery">
-          {data.slice(-maxCards).map((post) => (
-            <Card
-              key={post.id}
-              id={post.id}
-              nom={post.nom}
-              photo={post.photo}
-              audio={post.audio}
-            />
-          ))}
-        </div>
+          <h2 className="main__title">NOUVEAU</h2>
+          <div className="main__gallery">
+            {data.slice(-maxCards).map((post) => (
+              <Card
+                key={post.id}
+                id={post.id}
+                nom={post.nom}
+                photo={post.photo}
+                audio={post.audio}
+              />
+            ))}
+          </div>
         </section>
         <Contact />
       </Main>
-     
     </div>
   );
 }

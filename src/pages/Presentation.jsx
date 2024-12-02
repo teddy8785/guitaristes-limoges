@@ -18,7 +18,7 @@ function Presentation() {
       <Header>
         <nav>
           <button
-            className="header__link"
+            className="header__button"
             href="#"
             onClick={(e) => {
               e.preventDefault();

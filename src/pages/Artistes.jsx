@@ -2,15 +2,20 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import Card from "../components/Card";
 import data from "../artistes.json";
+import { useEffect } from "react";
 
 function Artistes() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <div>
       <Header>
         <nav>
         <button
-            className="header__link"
+            className="header__button"
             href="#"
             onClick={(e) => {
               e.preventDefault();
