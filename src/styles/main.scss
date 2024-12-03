@@ -16,6 +16,10 @@
     gap: 50px;
   }
 
+  #new {
+    scroll-margin-top: 40px;
+  }
+
   @media (min-width: 768px) and (max-width: 1008px) {
     &__link {
       margin: 7%;

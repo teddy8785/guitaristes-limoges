@@ -57,7 +57,7 @@ function Index() {
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
       </Header>
       <Main>
-        <section id="new" className="main__">
+        <section id="new">
           <h2 className="main__title">NOUVEAU</h2>
           <div className="main__gallery">
             {data.slice(-maxCards).map((post) => (
