@@ -4,6 +4,7 @@ import Main from "../components/Main";
 import data from "../artistes.json";
 import "../styles/presentation.css";
 import { useEffect } from "react";
+import { gestionErreurPhoto } from "../components/Card";
 
 function Presentation() {
   const { id } = useParams();
@@ -33,39 +34,61 @@ function Presentation() {
       <Main>
         <section className="presentation">
           <div>
-            <img
-              className="presentation__image"
-              src={`${process.env.PUBLIC_URL}/${post.photo}`}
-              alt={post.nom}
-            ></img>
-            <div className="presentation__contactcontent">
-              <h3>CONTACT</h3>
-              <div className="presentation__contact">
-                <a target="_blank" rel="noopener noreferrer" href={post.lienx}>
-                  X
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={post.lieninstagram}
-                >
-                  Instagram
-                </a>
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href={post.lienyoutube}
-                >
-                  Youtube
-                </a>
-                <p>{post.mail}</p>
+            {post.photo && (
+              <img
+                className="presentation__image"
+                src={`${process.env.PUBLIC_URL}/${post.photo}`}
+                alt={post.nom}
+                onError={gestionErreurPhoto}
+              ></img>
+            )}
+
+            {(post.lienx ||
+            post.lieninstagram ||
+            post.lienyoutube ||
+            post.mail) && (
+              <div className="presentation__contactcontent">
+                <h3>CONTACT</h3>
+                <div className="presentation__contact">
+                  {post.lienx && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={post.lienx}
+                    >
+                      X
+                    </a>
+                  )}
+                  {post.lieninstagram && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={post.lieninstagram}
+                    >
+                      Instagram
+                    </a>
+                  )}
+                  {post.lienyoutube && (
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={post.lienyoutube}
+                    >
+                      Youtube
+                    </a>
+                  )}
+                </div>
+                <div>{post.mail && <p>{post.mail}</p>}</div>
               </div>
-            </div>
+            )}
           </div>
           <div className="presentation__histoire">
-            <h3>HISTOIRE</h3>
-            <p className="texte">{post.histoire}</p>
-            <h3>DISCOGRAPHIE</h3>
+            {post.histoire && (
+              <>
+                <h3>HISTOIRE</h3>
+                <p className="texte">{post.histoire}</p>
+              </>
+            )}
           </div>
         </section>
       </Main>

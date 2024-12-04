@@ -58,7 +58,7 @@ function Index() {
       </Header>
       <Main>
         <section id="new">
-          <h2 className="main__title">NOUVEAU</h2>
+          <h2 className="main__title">NOUVEAUX</h2>
           <div className="main__gallery">
             {data.slice(-maxCards).map((post) => (
               <Card
@@ -66,6 +66,7 @@ function Index() {
                 id={post.id}
                 nom={post.nom}
                 photo={post.photo}
+                photoDown={post.photoDown}
                 audio={post.audio}
               />
             ))}

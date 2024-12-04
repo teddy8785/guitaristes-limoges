@@ -36,6 +36,7 @@ function Artistes() {
               id={post.id}
               nom={post.nom}
               photo={post.photo}
+              photoDown={post.photoDown}
               audio={post.audio}
             />
           ))}
