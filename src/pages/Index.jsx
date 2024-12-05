@@ -68,6 +68,7 @@ function Index() {
                 photo={post.photo}
                 photoDown={post.photoDown}
                 audio={post.audio}
+                annonce={post.annonce}
               />
             ))}
           </div>

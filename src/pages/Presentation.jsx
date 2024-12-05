@@ -32,6 +32,13 @@ function Presentation() {
         <h1 className="header__title">{post.nom}</h1>
       </Header>
       <Main>
+        {post.annonce && (
+          <div className="presentation__annonce">
+            <i className="fa-solid fa-bell" style={{ color: "red" }}></i>
+            {post.annonce}
+          </div>
+        )}
+
         <section className="presentation">
           <div>
             {post.photo && (
@@ -44,9 +51,9 @@ function Presentation() {
             )}
 
             {(post.lienx ||
-            post.lieninstagram ||
-            post.lienyoutube ||
-            post.mail) && (
+              post.lieninstagram ||
+              post.lienyoutube ||
+              post.mail) && (
               <div className="presentation__contactcontent">
                 <h3>CONTACT</h3>
                 <div className="presentation__contact">
@@ -56,7 +63,7 @@ function Presentation() {
                       rel="noopener noreferrer"
                       href={post.lienx}
                     >
-                      X
+                      <i className="fa-brands fa-twitter"></i>
                     </a>
                   )}
                   {post.lieninstagram && (
@@ -65,7 +72,7 @@ function Presentation() {
                       rel="noopener noreferrer"
                       href={post.lieninstagram}
                     >
-                      Instagram
+                      <i className="fa-brands fa-instagram"></i>
                     </a>
                   )}
                   {post.lienyoutube && (
@@ -74,7 +81,7 @@ function Presentation() {
                       rel="noopener noreferrer"
                       href={post.lienyoutube}
                     >
-                      Youtube
+                      <i className="fa-brands fa-youtube"></i>
                     </a>
                   )}
                 </div>

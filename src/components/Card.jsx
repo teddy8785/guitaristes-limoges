@@ -7,8 +7,7 @@ export const gestionErreurPhoto = (e) => {
   e.target.src = defaultPhoto;
 };
 
-function Card({ id, nom, photo, photoDown, audio }) {
-
+function Card({ id, nom, photo, photoDown, audio, annonce }) {
   const picturesSources = (
     <picture>
       {photoDown ? (
@@ -17,15 +16,12 @@ function Card({ id, nom, photo, photoDown, audio }) {
           media="(max-width: 768px)"
         />
       ) : (
-        <source
-          srcSet={defaultPhoto}
-          media="(max-width: 768px)"
-        />
+        <source srcSet={defaultPhoto} media="(max-width: 768px)" />
       )}
       <img
         className="card__img"
         src={photo ? `${process.env.PUBLIC_URL}/${photo}` : defaultPhoto}
-        alt={nom}
+        alt={nom ? `${nom} - Photo de l'artiste` : "Photo de l'artiste non disponible"}
         onError={gestionErreurPhoto}
       />
     </picture>
@@ -35,7 +31,7 @@ function Card({ id, nom, photo, photoDown, audio }) {
     <article className="card">
       <p className="card__name">{nom}</p>
       <NavLink className="card__link" to={`/Artiste/${id}`}>
-       {picturesSources}
+        {picturesSources}
         {audio && audio.length > 0 && (
           <audio
             controls
@@ -46,6 +42,7 @@ function Card({ id, nom, photo, photoDown, audio }) {
           </audio>
         )}
       </NavLink>
+      {annonce && <span className="card__annonce">Annonce</span>}
     </article>
   );
 }

@@ -2,6 +2,20 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
 
+  &__annonce {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background-color: yellow;
+    border-radius: 25px;
+    font-size: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
   h3 {
     font-size: 30px;
     text-align: center;
@@ -22,6 +36,12 @@
     height: 200px;
     border-radius: 30px;
     width: 300px;
+  }
+
+  &__contact {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 
   a {
@@ -48,10 +68,29 @@
     background-color: white;
   }
 
+  .fa-twitter {
+    color: #0b8efb;
+  }
+
+  .fa-youtube {
+    color: #ff3c3c;
+  }
+
+  .fa-instagram {
+    color: #a81799;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+  }
+
+  @media (max-width: 435px) {
+
+    &__annonce {
+      flex-direction: column;
+      font-size: 25px;
+    }
   }
 }

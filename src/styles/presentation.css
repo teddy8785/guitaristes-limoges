@@ -2,6 +2,19 @@
   display: grid;
   grid-template-columns: 1fr 4fr;
 }
+.presentation__annonce {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  background-color: yellow;
+  border-radius: 25px;
+  font-size: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
 .presentation h3 {
   font-size: 30px;
   text-align: center;
@@ -23,8 +36,8 @@
 }
 .presentation__contact {
   display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 .presentation a {
   font-family: "Nova Square", sans-serif;
@@ -46,11 +59,25 @@
   border-radius: 30px;
   background-color: white;
 }
+.presentation .fa-twitter {
+  color: #0b8efb;
+}
+.presentation .fa-youtube {
+  color: #ff3c3c;
+}
+.presentation .fa-instagram {
+  color: #a81799;
+}
 @media (max-width: 768px) {
   .presentation {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+  }
+}
+@media (max-width: 435px) {
+  .presentation__annonce {
+    flex-direction: column;
+    font-size: 25px;
   }
 }/*# sourceMappingURL=presentation.css.map */
