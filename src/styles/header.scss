@@ -30,6 +30,10 @@
     transition: 2s ease-in-out;
   }
 
+  &__button--fixed {
+    position: fixed;
+  }
+
   &__ancre--container {
     display: flex;
     gap: 10px;
@@ -38,13 +42,6 @@
   &__ancre {
     color: black;
     text-decoration: none;
-  }
-
-  .fa-bars {
-    position: fixed;
-    z-index: 1000;
-    color: white;
-    font-size: large;
   }
 
   &__title {
@@ -91,5 +88,17 @@
     &__title {
       font-size: 2rem;
     }
+
+  .fa-bars {
+    position: fixed;
+    z-index: 1000;
+    color: white;
+    font-size: large;
+  }
+
+  &__menu {
+   display: none;
+  }
+
   }
 }

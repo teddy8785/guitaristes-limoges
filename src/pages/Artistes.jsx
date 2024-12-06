@@ -28,7 +28,7 @@ function Artistes() {
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
       </Header>
       <Main>
-        <h2 className="main__title">Tous les guitaristes</h2>
+        <h2 className="main__title">TOUS LES GUITARISTES</h2>
         <div className="main__gallery">
           {data.map((post) => (
             <Card
