@@ -82,7 +82,7 @@
     color: white;
     font-size: large;
   }
-  .header__menu {
+  .header__button--fixed {
     display: none;
   }
 }/*# sourceMappingURL=header.css.map */
