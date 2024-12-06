@@ -22,8 +22,9 @@ function Index() {
   return (
     <div>
       <Header>
-        <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
+        <i className="fa-solid fa-bars" onMouseEnter={toggleMenu}></i>
         <nav
+          onMouseLeave={toggleMenu}
           className={`header__link--container ${
             isMenuOpen ? "" : "header__link--hidden"
           }`}
@@ -36,22 +37,22 @@ function Index() {
             ...Voir tous les guitaristes
           </NavLink>
           <div className="header__ancre--container">
-          <HashLink
-            smooth
-            to="#new"
-            className="header__ancre"
-            onClick={toggleMenu}
-          >
-            Nouveau
-          </HashLink>
-          <HashLink
-            smooth
-            to="#contact"
-            className="header__ancre"
-            onClick={toggleMenu}
-          >
-            contact
-          </HashLink>
+            <HashLink
+              smooth
+              to="#new"
+              className="header__ancre"
+              onClick={toggleMenu}
+            >
+              Nouveau
+            </HashLink>
+            <HashLink
+              smooth
+              to="#contact"
+              className="header__ancre"
+              onClick={toggleMenu}
+            >
+              contact
+            </HashLink>
           </div>
         </nav>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
