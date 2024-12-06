@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/guitaristes-limoges/static/css/main.1fcb2fd7.css",
+    "main.css": "/guitaristes-limoges/static/css/main.75ca11f4.css",
     "main.js": "/guitaristes-limoges/static/js/main.c2bcba14.js",
     "static/media/logo.jpg": "/guitaristes-limoges/static/media/logo.72cc9feb7126a2fb671d.jpg",
     "index.html": "/guitaristes-limoges/index.html",
-    "main.1fcb2fd7.css.map": "/guitaristes-limoges/static/css/main.1fcb2fd7.css.map",
+    "main.75ca11f4.css.map": "/guitaristes-limoges/static/css/main.75ca11f4.css.map",
     "main.c2bcba14.js.map": "/guitaristes-limoges/static/js/main.c2bcba14.js.map"
   },
   "entrypoints": [
-    "static/css/main.1fcb2fd7.css",
+    "static/css/main.75ca11f4.css",
     "static/js/main.c2bcba14.js"
   ]
 }
