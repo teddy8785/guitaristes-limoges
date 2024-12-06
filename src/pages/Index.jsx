@@ -27,6 +27,7 @@ function Index() {
           MENU
         </button>
         <nav
+          onMouseLeave={toggleMenu}
           className={`header__link--container ${
             isMenuOpen ? "" : "header__link--hidden"
           }`}
