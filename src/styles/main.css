@@ -17,6 +17,16 @@
 .main #new {
   scroll-margin-top: 40px;
 }
+.main__pagination {
+  margin: 20px 0px;
+}
+.main__pagination--button {
+  width: 50px;
+  font-size: 20px;
+  color: black;
+  border-radius: 2px;
+  border: 1px solid black;
+}
 @media (min-width: 768px) and (max-width: 1008px) {
   .main__link {
     margin: 7%;

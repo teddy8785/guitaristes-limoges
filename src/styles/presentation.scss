@@ -1,6 +1,7 @@
 .presentation {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  gap: 12px;
 
   &__annonce {
     display: flex;
