@@ -66,6 +66,10 @@
     cursor: pointer;
   }
 
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+  }
   @keyframes apparition {
     0% {
       height: 0;

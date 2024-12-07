@@ -57,6 +57,10 @@
   font-size: 20px;
   cursor: pointer;
 }
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
 @keyframes apparition {
   0% {
     height: 0;
