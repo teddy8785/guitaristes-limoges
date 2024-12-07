@@ -61,6 +61,11 @@
   display: flex;
   justify-content: space-between;
 }
+.header__research {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 @keyframes apparition {
   0% {
     height: 0;
