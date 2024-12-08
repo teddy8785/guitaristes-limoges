@@ -8,22 +8,26 @@ import { HashLink } from "react-router-hash-link";
 import { useEffect, useState } from "react";
 
 function Index() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   const maxCards = 4;
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
   return (
     <div>
       <Header>
         <i className="fa-solid fa-bars" onClick={toggleMenu}></i>
-        <button className="header__button--fixed header__button" onClick={toggleMenu}>
+        <button
+          className="header__button--fixed header__button"
+          onClick={toggleMenu}
+        >
           MENU
         </button>
         <nav

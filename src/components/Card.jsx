@@ -21,7 +21,11 @@ function Card({ id, nom, photo, photoDown, audio, annonce }) {
       <img
         className="card__img"
         src={photo ? `${process.env.PUBLIC_URL}/${photo}` : defaultPhoto}
-        alt={nom ? `${nom} - Photo de l'artiste` : "Photo de l'artiste non disponible"}
+        alt={
+          nom
+            ? `${nom} - Photo de l'artiste`
+            : "Photo de l'artiste non disponible"
+        }
         onError={gestionErreurPhoto}
       />
     </picture>
