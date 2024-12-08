@@ -41,11 +41,6 @@
   right: 0;
   font-weight: 600;
 }
-@media (max-width: 768px) {
-  .card {
-    width: 70%;
-  }
-}
 @media (max-width: 435px) {
   .card {
     width: 80%;

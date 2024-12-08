@@ -1,0 +1,29 @@
+.heroheader {
+  margin: 150px 0px 350px 0px;
+}
+.heroheader__title {
+  font-family: "Nova Square", sans-serif;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+.heroheader__welcome {
+  font-size: 30px;
+  color: white;
+  font-family: "Nova Square", sans-serif;
+  margin: 0px 30px;
+  text-align: center;
+}
+@media (max-width: 957px) {
+  .heroheader {
+    margin: 89px 0px 200px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .heroheader {
+    margin: 150px 0px 210px 0px;
+  }
+  .heroheader__title {
+    font-size: 50px;
+  }
+}/*# sourceMappingURL=heroheader.css.map */

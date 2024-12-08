@@ -18,7 +18,7 @@ code {
     monospace;
 }
 
-@media (max-width: 990px) {
+@media (max-width: 768px) {
  body {
   background-color: black;
   background-image: none;

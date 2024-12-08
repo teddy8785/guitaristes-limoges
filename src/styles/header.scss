@@ -1,4 +1,16 @@
 .header {
+  &__title {
+    margin-top: 0;
+    font-family: "Eater", serif;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 80px;
+    text-align: center;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 0;
+  }
+
   &__link--container {
     display: flex;
     flex-direction: column;
@@ -44,18 +56,6 @@
     text-decoration: none;
   }
 
-  &__title {
-    margin-top: 0;
-    font-family: "Eater", serif;
-    color: white;
-    letter-spacing: 5px;
-    font-size: 70px;
-    text-align: center;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 0;
-  }
-
   &__button {
     font-family: "Nova Square", sans-serif;
     color: white;
@@ -76,6 +76,7 @@
     align-items: center;
     gap: 10px;
   }
+
   @keyframes apparition {
     0% {
       height: 0;
@@ -90,7 +91,7 @@
 
   @media (max-width: 768px) {
     &__title {
-      font-size: 3.2rem;
+      font-size: 3.6rem;
     }
   }
 
@@ -99,15 +100,15 @@
       font-size: 2rem;
     }
 
-  .fa-bars {
-    position: fixed;
-    z-index: 1000;
-    color: white;
-    font-size: large;
-  }
+    .fa-bars {
+      position: fixed;
+      z-index: 1000;
+      color: white;
+      font-size: large;
+    }
 
-  &__button--fixed {
-   display: none;
-  }
+    &__button--fixed {
+      display: none;
+    }
   }
 }

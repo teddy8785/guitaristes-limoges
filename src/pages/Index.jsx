@@ -1,4 +1,5 @@
 import Header from "../components/Header";
+import Heroheader from "../components/Heroheader";
 import Main from "../components/Main";
 import Card from "../components/Card";
 import Contact from "../components/Contact";
@@ -64,6 +65,7 @@ function Index() {
         </nav>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
       </Header>
+      <Heroheader />
       <Main>
         <section id="new">
           <h2 className="main__title">NOUVEAUX</h2>
