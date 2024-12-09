@@ -1,3 +1,5 @@
+@import "variables/police";
+
 .contact {
   display: flex;
   flex-direction: column;
@@ -11,14 +13,14 @@
     font-size: 40px;
     color: white;
     text-align: center;
-    font-family: "Nova Square", sans-serif;
+    font-family: $font-secondary;
   }
 
   &__form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: "Nova Square", sans-serif;
+    font-family: $font-secondary;
     color: white;
   }
 
@@ -41,7 +43,7 @@
     border: none;
     font-size: large;
     font-weight: 600;
-    font-family: "Nova Square", sans-serif;
+    font-family: $font-secondary;
   }
 }
 

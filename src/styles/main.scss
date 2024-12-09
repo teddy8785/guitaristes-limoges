@@ -1,8 +1,10 @@
+@import "variables/police";
+
 .main {
   margin-top: 50px;
 
   &__title {
-    font-family: "Nova Square", sans-serif;
+    font-family: $font-secondary;
     font-size: 40px;
     color: white;
     text-align: center;

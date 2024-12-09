@@ -1,8 +1,10 @@
+@import "variables/police";
+
 .heroheader {
   margin: 168px 0px 350px 0px;
 
   &__title {
-    font-family: "Nova Square", sans-serif;
+    font-family: $font-secondary;
     color: white;
     text-align: center;
     font-size: 80px;
@@ -11,7 +13,7 @@
   &__welcome {
     font-size: 35px;
     color: white;
-    font-family: "Nova Square", sans-serif;
+    font-family: $font-secondary;
     margin: 0px 30px;
     text-align: center;
   }
