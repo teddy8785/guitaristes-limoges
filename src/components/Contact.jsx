@@ -35,7 +35,7 @@ export const ContactUs = () => {
       <br />
       <label htmlFor="mail">Ecrivez votre email :</label>
       <input
-        type="text"
+        type="email"
         className="contact__input"
         id="mail"
         name="email"
@@ -51,11 +51,14 @@ export const ContactUs = () => {
         required
       ></input>
       <br />
-      <label htmlFor="msg">Ecrivez votre message :</label>
+      <label htmlFor="msg">
+        Ecrivez ce que voulez qui apparaisse sur votre profil :
+      </label>
       <textarea
         className="contact__msg"
         id="msg"
         name="message"
+        placeholder="Si vous voulez apparitre sur le site,veuillez remplir le formulaire svp."
         required
       ></textarea>
       <br />

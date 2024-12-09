@@ -27,13 +27,11 @@
   &__input {
     width: 300px;
     height: 20px;
-    color: white;
   }
 
   &__msg {
     width: 300px;
     height: 100px;
-    color: white;
   }
 
   &__button {
@@ -45,16 +43,16 @@
     font-weight: 600;
     font-family: $font-secondary;
   }
-}
 
-@media (max-width: 768px) {
-  .contact {
-    scroll-margin-top: 270px;
+  @media (max-width: 768px) {
+    .contact {
+      scroll-margin-top: 270px;
+    }
   }
-}
 
-@media (max-width: 435px) {
-  .contact {
-    scroll-margin-top: 150px;
+  @media (max-width: 435px) {
+    .contact {
+      scroll-margin-top: 150px;
+    }
   }
 }
