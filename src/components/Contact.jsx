@@ -52,13 +52,13 @@ export const ContactUs = () => {
       ></input>
       <br />
       <label htmlFor="msg">
-        Ecrivez ce que voulez qui apparaisse sur votre profil :
+        Ecrivez ce que voulez qui apparaîssent sur votre profil :
       </label>
       <textarea
         className="contact__msg"
         id="msg"
         name="message"
-        placeholder="Si vous voulez apparitre sur le site,veuillez remplir le formulaire svp."
+        placeholder="Si vous voulez apparaître sur le site,veuillez remplir le formulaire svp."
         required
       ></textarea>
       <br />
