@@ -2,8 +2,8 @@ import { NavLink } from "react-router-dom";
 
 function MsgErreur() {
   return (
-    <div>
-      <NavLink to="/Index">Retour</NavLink>
+    <div className="header">
+      <NavLink to="/Index" className="header__button">Retour</NavLink>
     </div>
   );
 }
