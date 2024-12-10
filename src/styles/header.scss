@@ -1,6 +1,8 @@
 @import "variables/police";
 
 .header {
+  padding:10px;
+  
   &__title {
     margin-top: 0;
     font-family: $font-primary;

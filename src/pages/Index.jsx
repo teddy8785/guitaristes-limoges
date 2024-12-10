@@ -3,6 +3,7 @@ import Heroheader from "../components/Heroheader";
 import Main from "../components/Main";
 import Card from "../components/Card";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import data from "../artistes.json";
 import { NavLink } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
@@ -85,6 +86,7 @@ function Index() {
         </section>
         <Contact />
       </Main>
+      <Footer />
     </div>
   );
 }

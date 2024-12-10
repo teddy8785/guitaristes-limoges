@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import Card from "../components/Card";
 import Pagination from "../components/Pagination";
+import Footer from "../components/Footer";
 import data from "../artistes.json";
 import { useEffect, useState, useMemo } from "react";
 
@@ -110,6 +111,7 @@ function Artistes() {
           />
         )}
       </Main>
+      <Footer />
     </div>
   );
 }

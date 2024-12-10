@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Main from "../components/Main";
+import Footer from "../components/Footer";
 import data from "../artistes.json";
 import "../styles/presentation.css";
 import { useEffect } from "react";
@@ -89,16 +90,17 @@ function Presentation() {
               </div>
             )}
           </div>
-          <div className="presentation__histoire">
-            {post.histoire && (
+          {post.histoire && (
+            <div className="presentation__histoire">
               <>
                 <h3>HISTOIRE</h3>
-                <p className="texte">{post.histoire}</p>
+                <p>{post.histoire}</p>
               </>
-            )}
-          </div>
+            </div>
+          )}
         </section>
       </Main>
+      <Footer />
     </div>
   );
 }
