@@ -5,7 +5,7 @@ import "../styles/contact.css";
 export const ContactUs = () => {
   const form = useRef();
 
-  const SERVICE_ID = "service_fg2ovcs";
+  const SERVICE_ID = "service_dicf7dq";
   const TEMPLATE_ID = "template_gs4rnjf";
   const PUBLIC_KEY = "KUsWFUTSrViBBXM6W";
 
