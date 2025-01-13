@@ -89,6 +89,12 @@
   .header__title {
     font-size: 2rem;
   }
+  .header__nav--research {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
   .header .fa-bars {
     position: fixed;
     z-index: 1000;

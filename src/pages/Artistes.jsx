@@ -8,17 +8,27 @@ import { useEffect, useState, useMemo } from "react";
 
 function Artistes() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [selectedStyle, setSelectedStyle] = useState("");
   const [isResearchOpen, setIsResearchOpen] = useState(false);
   const [currentPage, setCurrentPages] = useState(1);
 
   const maxCards = 20;
 
+  // Extraire les styles uniques
+  const allStyles = useMemo(() => {
+    const styles = data.flatMap((artiste) => artiste.style);
+    return [...new Set(styles)];
+  }, []);
+
+  // Filtrage combiné par nom et style
   const cleanQuery = searchQuery.trim().toLocaleLowerCase();
   const filteredData = useMemo(() => {
-    return data.filter((artiste) =>
-      artiste.nom.toLocaleLowerCase().startsWith(cleanQuery)
+    return data.filter(
+      (artiste) =>
+        artiste.nom.toLocaleLowerCase().startsWith(cleanQuery) &&
+        (selectedStyle === "" || artiste.style.includes(selectedStyle))
     );
-  }, [cleanQuery]);
+  }, [cleanQuery, selectedStyle]);
 
   const totalPages = Math.ceil(filteredData.length / maxCards);
 
@@ -69,14 +79,36 @@ function Artistes() {
                 style={{ color: "white" }}
               ></i>
             </button>
+            <div className="header__nav--research">
             <input
               type="text"
+              placeholder="par Nom"
               className={`header__input--research ${
                 isResearchOpen ? "" : "header__link--hidden"
               }`}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             ></input>
+            <select
+              className={`header__input--research ${
+                isResearchOpen ? "" : "header__link--hidden"
+              }`}
+              value={selectedStyle}
+              onChange={(e) => setSelectedStyle(e.target.value)}
+            >
+              {selectedStyle === "" && (
+                <option value="" disabled hidden>
+                  Par style
+                </option>
+              )}
+              <option value="">Tous les styles</option>
+              {allStyles.map((style, index) => (
+                <option key={index} value={style}>
+                  {style}
+                </option>
+              ))}
+            </select>
+            </div>
           </div>
         </nav>
         <h1 className="header__title">GUITARISTES LIMOGES</h1>
