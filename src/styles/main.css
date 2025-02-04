@@ -1,5 +1,6 @@
 .main {
   margin-top: 50px;
+  flex: 1;
 }
 .main__title {
   font-family: "Nova Square", sans-serif;

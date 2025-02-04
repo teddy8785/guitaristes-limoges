@@ -1,9 +1,9 @@
 .presentation {
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  gap: 12px;
-  min-height: 62vh;
-  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2px;
 
   &__annonce {
     display: flex;
@@ -63,6 +63,7 @@
     color: black;
     font-size: 25px;
     text-align: center;
+    padding: 10px;
   }
 
   &__histoire {

@@ -20,7 +20,7 @@ function Presentation() {
   }
 
   return (
-    <div>
+    <div className="footer__bottom">
       <Header>
         <nav>
           <button
@@ -45,7 +45,7 @@ function Presentation() {
         )}
 
         <section className="presentation">
-          <div>
+          <>
             {post.photo && (
               <img
                 className="presentation__image"
@@ -93,7 +93,7 @@ function Presentation() {
                 <div>{post.mail && <p>{post.mail}</p>}</div>
               </div>
             )}
-          </div>
+          </>
           {post.histoire && (
             <div className="presentation__histoire">
               <>
