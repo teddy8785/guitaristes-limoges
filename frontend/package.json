@@ -2,7 +2,7 @@
   "name": "guitaristes-limoges",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://teddy8785.io/guitaristes-limoges",
+  "homepage": "https://teddy8785.github.io/guitaristes-limoges",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@testing-library/jest-dom": "^5.14.1",
